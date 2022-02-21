@@ -1,45 +1,55 @@
-# Reading Quiz 1
+# Quiz 1
 
 > James Raphael Tiovalen / 1004555
 
-1. Which of the followings are types of relational databases?
+1. What are some of the benefits of using Amazon EBS volumes? (Select THREE.)
+   - [x] Cost-effectiveness
+   - [ ] Snapshots stored in Amazon Elastic File System (Amazon EFS)
+   - [x] Performance for any workload
+   - [ ] Predefined ridged performance
+   - [x] Virtually unlimited scale
+   - [ ] Extensive configuration process
 
-   **A. OLTP**
+2. What is the main difference between Amazon EC2 instance stores and Amazon EBS volumes?
 
-   B. Key-value
+   - **Instance stores are ephemeral (temporary), Amazon EBS volumes are persistent**
+   - Instance stores have a higher latency connecting to EC2 instances, Amazon EBS volumes have a lower latency connecting to EC2 instances
+   - Instance stores are available only in SSD options, Amazon EBS volumes are available in SSD and HDD options
+   - Instance stores offer sliding tier performance options, Amazon EBS volumes offer fixed performance tiers
 
-   C. Document
+3. What is used to navigate and query a relational database?
 
-   **D. OLAP**
+   - Index
+   - Primary key
+   - **SQL**
 
-2. Please map the description to the corresponding data types.
+4. Which style of URL lists the bucket name first, and makes URL more user friendly and easy to read?
 
-   A. Unstructured data
+   - **A. Virtual hosted-style URLs**
+   - B. Path-style URLs
 
-   B. Semistructured data
+5. What is the definition of object-based storage?
 
-   C. Structured data
+   - A. Object storage is a method of storing data based on a hierarchical structure of directories and sub-directories.
+   - B. Object storage is a method of storing files in a flat address space based on folders and sub-folders.
+   - **C. Object storage is a method of storing files in a flat address space based on attributes and metadata.**
+   - D. Object storage is a method of storing files based on individual blocks located on a hard drive.
 
-- A data lake where files are stored is an example of this type of data structure: **A**
-- This type of data is most commonly stored in relational databases: **C**
-- XML and JSON are two data formats supported by this data source type: **B**
+6. How can you organize your objects to mimic a folder hierarchy?
 
-3. What is used to create relationships between tables in a relational database?
+   - A. Just create a new folder or sub folder
+   - **B. Use prefixes and delimiters to group items**
+   - C. Store all like-type objects in one single bucket
+   - D. Object store is a flat structure. There is no way to do this
 
-   **A. Foreign key**
+7. Please map the description with the corresponding data storage type.
 
-   B. Primary key
+   A. File store
 
-   C. Entity
+   B. Object store
 
-4. Amazon S3 is a file-based storage platform: **False**
+   C. Block store
 
-5. What is the required relationship to attach an Amazon EBS volume to an Amazon EC2 instance?
-
-   **A. The Amazon EC2 instance and the Amazon EBS volume must be in the same AWS Region and in the same Availability Zone.**
-
-   B. The Amazon EC2 instance and the Amazon EBS volume must both be encrypted using the same AWS Key Management Service encryption key.
-
-   C. The Amazon EC2 instance and the Amazon EBS volume must share Transport Layer Security (TLS) certificates.
-
-   D. The Amazon EC2 instance and the Amazon EBS volume must be in the same AWS Region but can be in different Availability Zones.
+   - Raw storage media divided into segments data addresses: C
+   - Storing data in a directory tree hierarchy: A
+   - Storing the primary and meta data together with a unique identifier: B
