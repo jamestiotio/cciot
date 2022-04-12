@@ -6,7 +6,7 @@
    - [x] A tick interrupt happens.
    - [x] The current running task is suspended.
    - [x] The current running task is blocked.
-   - [x] The current running task successfully takes a mutex.
+   - [ ] The current running task successfully takes a mutex.
 2. Lab 1 uses presigned URL with a short expiration time to access the Amazon S3 service. This follows the security principle of:
    - Secure and fail-safe defaults
    - **Minimum exposure**
@@ -14,7 +14,7 @@
    - Two-way authentication
 3. When an ESP32 device boots, it first executes the code from `_____`, then it loads the code from `_____` into `_____`.
    - SRAM, ROM, Flash
-   - ROM, Flash, SRAM
+   - **ROM, Flash, SRAM**
    - SRAM, ROM, Flash
    - Flash, ROM, SRAM
 4. One should use edge computing to process data locally only if the locally generated data are too bulky to be transferred to the cloud, or the round-trip time cannot meet the latency requirement. For small amount of data that do not have strict latency requirement for processing, it is always better to use the cloud directly. This is because the cloud provides lower cost and more flexibility compared to the use of edge-based solutions.
