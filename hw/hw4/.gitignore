@@ -1,5 +1,7 @@
 *.log
 *.aux
 *.synctex*
+*.fdb_latexmk
+*.fls
 *.pdf
 !hw4.pdf
