@@ -524,7 +524,6 @@
 	\DrawInput[#4]{#2}{0.75}{.5 + #1}{3}{#3}{A}
 	\DrawInput[#4]{#2}{1.5}{1.222 + #1}{1}{#3}{B}
 	\DrawInput[#4]{#2}{3.333}{.4 + #1}{8}{#3}{C}
-	\DrawInput[#4]{#2}{3.0}{2.666 + #1 + \InputsAEightBump}{4}{#3}{D}
 	\DrawInput[#4]{#2}{4.666}{1.5 + #1}{2}{#3}{E}
 	\DrawInput[#4]{#2}{8.777}{2.333 + #1}{5}{#3}{G}
 	\DrawInput[#4]{#2}{11}{1.75 + #1}{9}{#3}{H}
@@ -543,6 +542,7 @@
 				\fi
 			\fi
 		\fi
+		\DrawInput[\LateNineBorder]{\LateNineColor}{3.0}{2.666 + #1}{4}{#3}{D}
 		\DrawInput[\LateNineBorder]{\LateNineColor}{7}{4.25 + #1}{7}{#3}{F}
 	\fi
 	\if \ShowLateness 1
@@ -910,14 +910,13 @@
 
 \newcommand{\DrawPerfectWatermarkA}[1] {
 	\draw [-, s_watermark, #1]
-	(\ox + 0.3, \oy + 0.01)
-	to [out=80,in=250] (\ox + 0.5, \oy +  .7)
-	to [out=30,in=230] (\ox + 1.1, \oy +  1.1)
-	to [out=60,in=230] (\ox + 1.5, \oy +  1.7)
-	to [out=60,in=230] (\ox + 2.5, \oy +  2.5)
-	to [out=60,in=220] (\ox + 2.9, \oy +  3)
-	to [out=60,in=230] (\ox + 6.6, \oy +  4.3)
-	to [out=60,in=220] (\ox + 7, \oy +  4.6)
+	(\ox + 0.111, \oy + 0.01)
+	to [out=80,in=200] (\ox + 0.5, \oy +  .7)
+	to [out=20,in=250] (\ox + 1.15, \oy +  1.3)
+	to [out=70,in=225] (\ox + 2.0, \oy +  1.8)
+	to [out=45,in=210] (\ox + 3, \oy +  3)
+	to [out=30,in=230] (\ox + 6.6, \oy +  4.3)
+	to [out=50,in=180] (\ox + 7, \oy +  4.6)
 	to [out=0, in=180] (\ox + 7.7, \oy +  4.6)
 	to [out=0, in=180] (\ox + 12.000, \oy +  4.6) % end
 	;
@@ -928,9 +927,9 @@
 	(\ox + 0.111, \oy + 0.01)
 	to [out=80,in=180] (\ox + 0.5, \oy +  .8)
 	to [out=0, in=180] (\ox + 1.5, \oy +  1.7)
-	to [out=0, in=180] (\ox + 2.9, \oy +  3)
-	to [out=0, in=180] (\ox + 7, \oy +  3.6)
-	to [out=0, in=180] (\ox + 12.000, \oy +  3.8) % end
+	to [out=0, in=180] (\ox + 8, \oy +  2.25)
+	to [out=0, in=180] (\ox + 8.75, \oy +  2.75)
+	to [out=0, in=180] (\ox + 12.000, \oy +  2.9) % end
 	;
 }
 
