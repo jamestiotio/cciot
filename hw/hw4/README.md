@@ -2,4 +2,4 @@
 
 Reference TeX files are from [Tyler Akidau](https://github.com/takidau/animations).
 
-For the purposes of the homework submission, we only modified the first frames to serve as the pictures of the final results/outputs. Note that the generated animations are wrong and do not make sense in overall and future work still needs to be done to correct them.
+Note that the files are modified to produce the correct animation frames **ONLY** for those cases specified in Homework 4. Other irrelevant commands and comments in the [`diagrams.tex`](./diagrams.tex) file might not be accurate since they are not of importance with respect to Homework 4.

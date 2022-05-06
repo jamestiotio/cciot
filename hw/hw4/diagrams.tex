@@ -1461,9 +1461,9 @@
 
 \def \ShowLateness{0}
 \def \latey{.1}
-\newcommand{\DrawLatenessHorizonText}[3]{
+\newcommand{\DrawLatenessHorizonText}[5]{
 	\contourlength{0.66pt}
-	\node[font=\bf\sffamily\scriptsize,c_outlined_text] at (\ox + #2 + \lateness, \oy +  #3 +.52) {\contour{c_outlined_text_outline}{[12:0#1, 12:0#2)}};
+	\node[font=\bf\sffamily\scriptsize,c_outlined_text] at (\ox + #2 + \lateness, \oy +  #3 +.52) {\contour{c_outlined_text_outline}{[12:0#4, 12:0#5)}};
 \node[font=\bf\sffamily\scriptsize,c_outlined_text] at (\ox + #2 + \lateness, \oy +  #3 +.3) {\contour{c_outlined_text_outline}{Lateness Horizon}};
 }
 
@@ -1486,7 +1486,7 @@
 		{\def \lateX{#3 + \lateness}}
 
 		\draw [s_timeline] (\ox + #3 + \lateness, \oy +  #5 - \latey) -- (\ox + #3 + \lateness, \oy + #5 + \latey);
-		\DrawLatenessHorizonText{#2}{#3}{#5}
+		\DrawLatenessHorizonText{#2}{#3}{#5}{}{}
 		%\DrawCustomOutput{#3}{#3 + 1}{#4}{#5}{}{s_late}{c_state_text}{opacity=#1} 
 	\fi
 }
@@ -1565,13 +1565,13 @@
 }
 
 \definecolor{c_unused}{HTML}{123456}
-\newcommand{\DrawTombstone}[4]{
+\newcommand{\DrawTombstone}[6]{
 	\def \DrawTriggerLine{0}
 	\DrawCustomOutput[s_tomb]{#1}{#2}{#3}{#4}{}{c_tomb}{c_unused}{opacity=0}
 	\def \DrawTriggerLine{1}
 	\draw [s_tomb_late] (\ox + #2, \oy +  #4) -- (\ox + #2 + \lateness, \oy +  #4);
 	\draw [s_tomb_late] (\ox + #2 + \lateness, \oy +  #4 - \latey) -- (\ox + #2 + \lateness, \oy + #4 + \latey);
-	\DrawLatenessHorizonText{#1}{#2}{#4}
+	\DrawLatenessHorizonText{#1}{#2}{#4}{#5}{#6}
 }
 
 \newcommand{\DrawTimeline}[2]{

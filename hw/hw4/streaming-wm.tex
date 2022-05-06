@@ -6,7 +6,6 @@
 %\def \DottedPerfectWatermark{1}
 \def \DottedHeuristicWatermark{0}
 
-
 \newcommand{\FrameV}[0] {
 	\TriggersDiagram[c_back]{5.222}{
 		\DrawOutput{0}{2}{0.000}{1.7}{4}
@@ -28,195 +27,143 @@
 \if \FastRender 0
 	\FrameA{.111}
 	\FrameA{.222}
+	\FrameA{.333}
 
 	\newcommand{\FrameB}[1] {
 		\TriggersDiagram{#1}{
-			\DrawState{0}{2}{0.000}{#1}{5}
+			\DrawState{2}{4}{0.000}{#1}{8}
 		}
 	}
-	\FrameB{.333}
 	\FrameB{.444}
-	\FrameB{.555}
 
 	\newcommand{\FrameC}[1] {
 		\TriggersDiagram{#1}{
-			\DrawState{0}{2}{0.000}{#1}{5}
-			\DrawState{2}{4}{0.000}{#1}{7}
+			\DrawState{0}{2}{0.000}{#1}{3}
+			\DrawState{2}{4}{0.000}{#1}{8}
 		}
 	}
+	\FrameC{.555}
 	\FrameC{.666}
 	\FrameC{.777}
 	\FrameC{.888}
+	\FrameC{1.000}
+	\FrameC{1.111}
 
 	\newcommand{\FrameD}[1] {
 		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawState{2}{4}{0.000}{#1}{7}
+			\DrawState{0}{2}{0.000}{#1}{4}
+			\DrawState{2}{4}{0.000}{#1}{8}
 		}
 	}
-	\FrameD{1.000}
-	\FrameD{1.111}
+	\FrameD{1.222}
+	\FrameD{1.333}
+	\FrameD{1.444}
 
 	\newcommand{\FrameF}[1] {
 		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawState{2}{4}{0.000}{#1}{10}
+			\DrawState{0}{2}{0.000}{#1}{4}
+			\DrawState{2}{4}{0.000}{#1}{8}
+			\DrawState{4}{6}{0.000}{#1}{2}
 		}
 	}
-	\FrameF{1.222}
-	\FrameF{1.333}
-	\FrameF{1.444}
 	\FrameF{1.555}
+	\FrameF{1.666}
 
 	\newcommand{\FrameH}[1] {
 		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawState{2}{4}{0.000}{#1}{10}
-			\DrawState{4}{6}{0.000}{#1}{4}
+			\DrawOutput{0}{2}{0.000}{1.7}{4}
+			\DrawState{2}{4}{0.000}{#1}{8}
+			\DrawState{4}{6}{0.000}{#1}{2}
+			\DrawState{10}{12}{0.000}{#1}{9}
 		}
 	}
-	\FrameH{1.666}
 	\FrameH{1.777}
-	\FrameH{1.888}
 
 	\newcommand{\FrameI}[1] {
 		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawState{2}{4}{0.000}{#1}{10}
-			\DrawState{4}{6}{0.000}{#1}{4}
+			\DrawOutput{0}{2}{0.000}{1.7}{4}
+			\DrawOutput{2}{4}{0.000}{1.88}{8}
+			\DrawState{4}{6}{0.000}{#1}{2}
+			\DrawState{10}{12}{0.000}{#1}{9}
 		}
 	}
+	\FrameI{1.888}
 	\FrameI{2.000}
+	\FrameI{2.111}
 
-	\newcommand{\FrameJ}[2] {
+	\newcommand{\FrameJ}[1] {
 		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawState{2}{4}{0.000}{#1}{18}
-			\DrawState{4}{6}{0.000}{#1}{4}
-			#2
+			\DrawOutput{0}{2}{0.000}{1.7}{4}
+			\DrawOutput{2}{4}{0.000}{1.88}{8}
+			\DrawOutput{4}{6}{0.000}{2.14}{2}
+			\DrawState{10}{12}{0.000}{#1}{9}
 		}
 	}
-	\FrameJ{2.111}{}
-	\FrameJ{2.222}{}
+	\FrameJ{2.222}
 
 	\newcommand{\FrameK}[1] {
-		\FrameJ{#1}{
-			\DrawState{6}{8}{0.000}{#1}{3}
+		\TriggersDiagram{#1}{
+			\DrawOutput{0}{2}{0.000}{1.7}{4}
+			\DrawOutput{2}{4}{0.000}{1.88}{8}
+			\DrawOutput{4}{6}{0.000}{2.14}{2}
+			\DrawOutput{6}{8}{0.000}{2.25}{0}
+			\DrawState{8}{10}{0.000}{#1}{5}
+			\DrawState{10}{12}{0.000}{#1}{9}
 		}
 	}
 	\FrameK{2.333}
 	\FrameK{2.444}
+	\FrameK{2.555}
+	\FrameK{2.666}
+	\FrameK{2.777}
 
-	\newcommand{\FrameL}[2] {
+	\newcommand{\FrameL}[1] {
 		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawOutput{2}{4}{0.000}{2.500}{18}
-			\DrawState{4}{6}{0.000}{#1}{4}
-			\DrawState{6}{8}{0.000}{#1}{3}
+			\DrawOutput{0}{2}{0.000}{1.7}{4}
+			\DrawOutput{2}{4}{0.000}{1.88}{8}
+			\DrawOutput{4}{6}{0.000}{2.14}{2}
+			\DrawOutput{6}{8}{0.000}{2.25}{0}
+			\DrawOutput{8}{10}{0.000}{2.78}{5}
+			\DrawState{10}{12}{0.000}{#1}{9}
 		}
 	}
-	\FrameL{2.555}{}
-	\FrameL{2.666}{}
+	\FrameL{2.888}
 
-
-	\newcommand{\FrameM}[2] {
-		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawOutput{2}{4}{0.000}{2.500}{18}
-			\DrawOutput{4}{6}{0.000}{2.675}{4}
-			\DrawState{6}{8}{0.000}{#1}{3}
-		}
-	}
-	\FrameM{2.777}{}
-	\FrameM{2.888}{}
 \fi % \FastRender 0
 
-\newcommand{\FrameN}[2] {
+\newcommand{\FrameM}[1] {
 	\TriggersDiagram{#1}{
-		\DrawOutput{0}{2}{0.000}{1.000}{5}
-		\DrawOutput{2}{4}{0.000}{2.500}{18}
-		\DrawOutput{4}{6}{0.000}{2.675}{4}
-		\DrawState{6}{8}{0.000}{#1}{3}
+		\DrawOutput{0}{2}{0.000}{1.7}{4}
+		\DrawOutput{2}{4}{0.000}{1.88}{8}
+		\DrawOutput{4}{6}{0.000}{2.14}{2}
+		\DrawOutput{6}{8}{0.000}{2.25}{0}
+		\DrawOutput{8}{10}{0.000}{2.78}{5}
+		\DrawOutput{10}{12}{0.000}{2.9}{9}
 	}
 }
-\FrameN{3.000}{}
+\FrameM{3.000}
 
 \if \FastRender 0
-	\newcommand{\FrameO}[2] {
-		\FrameN{#1}{
-		}
-	}
-	\FrameO{3.111}{}
-	\FrameO{3.222}{}
-
-	\newcommand{\FrameP}[2] {
-		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawOutput{2}{4}{0.000}{2.500}{18}
-			\DrawOutput{4}{6}{0.000}{2.675}{4}
-			\DrawState{6}{8}{0.000}{#1}{3}
-		}
-	}
-	\FrameP{3.333}{}
-
-	\newcommand{\FrameQ}[2] {
-		\FrameP{#1}{
-		}
-	}
-	\FrameQ{3.444}{}
-	\FrameQ{3.555}{}
-
-	\newcommand{\FrameR}[1] {
-		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawOutput{2}{4}{0.000}{2.500}{18}
-			\DrawOutput{4}{6}{0.000}{2.675}{4}
-			\DrawState{6}{8}{0.000}{#1}{11}
-		}
-	}
-	\FrameR{3.666}
-	\FrameR{3.777}
-	\FrameR{3.888}
-
-	\newcommand{\FrameS}[2] {
-		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawOutput{2}{4}{0.000}{2.500}{18}
-			\DrawOutput{4}{6}{0.000}{2.675}{4}
-			\DrawState{6}{8}{0.000}{#1}{12}
-		}
-	}
-	\FrameS{4.000}{}
-	\FrameS{4.111}{}
-	\FrameS{4.222}{}
-	\FrameS{4.333}{}
-
-	\newcommand{\FrameT}[2] {
-		\TriggersDiagram{#1}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawOutput{2}{4}{0.000}{2.500}{18}
-			\DrawOutput{4}{6}{0.000}{2.675}{4}
-			\DrawOutput{6}{8}{0.000}{4.37}{12}
-		}
-	}
-	\FrameT{4.444}{}
-	\FrameT{4.555}{}
-	\FrameT{4.666}{}
-	\FrameT{4.777}{}
-	\FrameT{4.888}{}
-	\FrameT{5.000}{}
-
-	\newcommand{\FrameU}[1] {
-		\TriggersDiagram[c_back]{5.222}{
-			\DrawOutput{0}{2}{0.000}{1.000}{5}
-			\DrawOutput{2}{4}{0.000}{2.500}{18}
-			\DrawOutput{4}{6}{0.000}{2.675}{4}
-			\DrawOutput{6}{8}{0.000}{4.37}{12}
-		}
-	}
-	\FrameU{.22}
-	\FrameU{.11}
-	\FrameU{.01}
+	\FrameM{3.111}
+	\FrameM{3.222}
+	\FrameM{3.333}
+	\FrameM{3.444}
+	\FrameM{3.555}
+	\FrameM{3.666}
+	\FrameM{3.777}
+	\FrameM{3.888}
+	\FrameM{4.000}
+	\FrameM{4.111}
+	\FrameM{4.222}
+	\FrameM{4.333}
+	\FrameM{4.444}
+	\FrameM{4.555}
+	\FrameM{4.666}
+	\FrameM{4.777}
+	\FrameM{4.888}
+	\FrameM{5.000}
+	\FrameM{5.111}
+	\FrameM{5.221}
 
 \fi % FastRender 0
 
